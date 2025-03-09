@@ -6,8 +6,12 @@
   "repository": "git@github.com:codiaji/JavaScript-Design-Patterns.git",
   "author": "codiaji <codiaji@gmail.com>",
   "license": "MIT",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "jest --watchAll"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

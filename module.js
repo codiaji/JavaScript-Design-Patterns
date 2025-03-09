@@ -12,4 +12,4 @@ function person(name, age) {
         return self;
     }
 }
-export default person;
+module.exports=person;
