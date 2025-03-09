@@ -6,6 +6,7 @@
   "repository": "git@github.com:codiaji/JavaScript-Design-Patterns.git",
   "author": "codiaji <codiaji@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   }
