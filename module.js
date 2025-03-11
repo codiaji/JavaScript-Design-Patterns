@@ -1,15 +1,14 @@
-let i=0;
-let self;
-function person(name, age) {
-    if(i==0){
-        this.name = name;
-        this.age=age;
-        self=this;
-        i++;
-    }else{
-        self.name=name;
-        self.age=age;
-        return self;
+class Person{
+    static #singletonPerson={};
+    constructor(name,age){
+        Person.#makePerson(name,age);
+        return Person.#singletonPerson;
+    }
+
+    static #makePerson(name,age){
+        Person.#singletonPerson.name=name;
+        Person.#singletonPerson.age=age;
+        return Person.#singletonPerson;
     }
 }
-module.exports=person;
+module.exports=Person;
